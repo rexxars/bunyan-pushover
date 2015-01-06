@@ -35,7 +35,7 @@ A [Bunyan][0] stream that logs using the [Pushover][1] service.
 ## Installation
 
 ``` bash
-  $ npm install bunyan-pushover
+$ npm install bunyan-pushover
 ```
 
 ## License
