@@ -1,9 +1,12 @@
 language: node_js
 node_js:
-- '0.11'
-- '0.10'
+  - '0.11'
+  - '0.10'
 script:
-- npm run test-travis
+  - npm run test-travis
 after_script:
-- npm install coveralls@2.11.x && cat coverage/lcov.info | coveralls
-- npm install codeclimate-test-reporter && cat coverage/lcov.info | codeclimate
+  - npm install coveralls@2.11.x && cat coverage/lcov.info | coveralls
+  - npm install codeclimate-test-reporter && cat coverage/lcov.info | codeclimate
+env:
+  global:
+    - secure: "ICFtZ4jWRbeTCu1dw5L/a5c1m9wZ+gRaeBtS/9/Wk48iGa81rPiZd8R2b1wob6skmGYreP/UA5HvrseXeNt858/WIDecBp8emJGh0iUVZhnOl58DutCUhg3U0V8/1pTY798AmSXvfElOvraTOm72oMF/d3u5hsgktugCbuTppos="
